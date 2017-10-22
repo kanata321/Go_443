@@ -21,8 +21,8 @@ func main() {
 
 	defer conn.Close()
 
-	for num, certArray := range certs {
+	for num, cert := range certs {
 		log.Printf("num:%v", num)
-		log.Printf("%v", certArray)
+		log.Printf("%v", cert)
 	}
 }
