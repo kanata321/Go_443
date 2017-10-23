@@ -39,7 +39,9 @@ var addCmd = &cobra.Command{
 	Short: "get infomation of HTTPS certification.",
 	Long:  "get infomation of HTTPS certification.",
 	Run: func(cmd *cobra.Command, args []string) {
-		main(args)
+		if len(args) > 0 {
+			main(args)
+		}
 	},
 }
 
